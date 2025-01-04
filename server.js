@@ -88,7 +88,9 @@ server.post('/auth/login', (req, res) => {
   }
   const access_token = createToken({email, password})
   console.log("Access Token:" + access_token);
-  res.status(200).json({access_token})
+  const userIndex = userdb.users.findIndex(user => user.email === email);
+  const role = userdb.users[userIndex].role;
+  res.status(200).json({access_token, role })
 })
 
 server.use(/^(?!\/auth).*$/,  (req, res, next) => {
