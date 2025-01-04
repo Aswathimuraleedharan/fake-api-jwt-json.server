@@ -28,10 +28,13 @@ POST http://localhost:8000/auth/register
 with the following data 
 
 ```
-{
-  "email": "nilson@email.com",
-  "password":"nilson"
-}
+1.Admin:
+Email: admin@gmail.com.com
+Password: admin123
+
+2.User:
+Email: user@gmail.com
+Password: user123
 ```
 
 You should receive an access token with the following format 
