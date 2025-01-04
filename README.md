@@ -1,3 +1,4 @@
+
 # JSONServer + JWT Auth
 
 A Fake REST API using json-server with JWT authentication. 
@@ -56,3 +57,6 @@ Check out these tutorials:
 
 
 
+# fake-api-jwt-json.server
+for authtication
+4108434744971b5fd77c14934137ed30b335012f
